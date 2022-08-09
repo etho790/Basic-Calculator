@@ -1,0 +1,105 @@
+.Calculator-grid{
+    border: 10px solid blue;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;  /* gap between each element*/
+  
+    grid-template-areas: "A A A A"  
+                         "Z Z Z Z" 
+                         "B B C D"  
+                         "E F G H"  
+                         "I J K L"
+                         "M N O P"
+                         "Q R S S";
+
+
+    margin: 400px;
+   
+}
+
+#display {
+    grid-area: A;
+    height: 40px;
+    background-color: transparent;    
+    text-align: right;    
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    word-wrap: break-word;          /*wraps the output*/
+    word-break: break-all;           /*breaks the word*/
+}
+
+#Answerdisplay{
+    grid-area: Z;
+    height: 50px;
+    background-color: transparent;    
+    text-align: right; 
+    line-height: 70px;
+    font-size: 20PX;
+    font-family: "Gill Sans Extrabold";
+    src: url('../fonts/digital/digital.ttf');
+  
+    padding: 16px 8px;
+    word-wrap: break-word;          /*wraps the output*/
+    word-break: break-all;           /*breaks the word*/
+}
+   
+
+
+
+
+.Previous-operand{
+    color: rgb(114, 112, 112);      /*size and specs of the output*/
+    font-size: 1.5em;
+}
+
+.Current-operand{
+    color: white;                   /*size and specs of the output*/
+    font-size: 2.5em;
+}
+
+.buttons{
+
+    border: 1px solid black;
+    padding: 20px;
+    font-family: "Georgia", serif;
+    font-weight: bolder;
+    cursor : pointer;       /*changes the cursor into an icon upon hovering over it*/
+
+}
+
+.buttons:hover{     /*responsiveness upon hovering*/
+    background-color: #000000; /* black */
+    color: white;       
+}
+
+.AC
+{
+    grid-area: B;
+
+}
+
+.Add
+{
+    grid-area: L;
+
+}
+.Minus
+{
+    grid-area: P;
+
+}
+.Multiply
+{
+
+    grid-area: H;
+}
+
+.b__
+{
+    grid-area: Q;
+}
+.equals
+{
+    grid-area: S;
+}
