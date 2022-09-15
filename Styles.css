@@ -2,7 +2,7 @@
     border: 10px solid blue;
     padding: 20px;
     display: grid;
-    grid-gap: 10px;  /* gap between each element*/
+    grid-gap: 15px;  /* gap between each element*/
   
     grid-template-areas: "A A A A"  
                          "Z Z Z Z" 
@@ -13,7 +13,7 @@
                          "Q R S S";
 
 
-    margin: 400px;
+    margin: 200px;
    
 }
 
