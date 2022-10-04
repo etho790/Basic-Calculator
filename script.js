@@ -164,13 +164,13 @@ buttons.map(button=>    //iterates through all elements in the array, which are 
 
   function ExecutionFunc()
   {   
-    var MaxAmntOfChars = 15
+    var MaxAmntOfChars = 20
     if(arr.length>=MaxAmntOfChars)
     { //if you've reached max capacity of inputs but the last element is an operation or decimal point
       if(arr[arr.length-1]=='−'|| arr[arr.length-1]=='×'||arr[arr.length-1]=='÷'||arr[arr.length-1]=='+' || arr[arr.length-1]=='.')
       {
-        //MAKE THIS FONT LOOK ROBOTIC IN THE STYLE.CSS & once we reach 15chars, if the last element is a number 
-        //and we type in an operation (knowing that this exceeds the 15 chars), it removes the number & modifies the 
+        //MAKE THIS FONT LOOK ROBOTIC IN THE STYLE.CSS & once we reach 20chars, if the last element is a number 
+        //and we type in an operation (knowing that this exceeds the 20 chars), it removes the number & modifies the 
         //operation prior, fix this for professionalism
         Answerdisplay.innerText = "INVALID INPUTS"
       }
@@ -300,7 +300,7 @@ buttons.map(button=>    //iterates through all elements in the array, which are 
 
   function MaxChars(e)
   {    
-    var MaxAmntOfChars = 15
+    var MaxAmntOfChars = 20
     if(arr.length<MaxAmntOfChars)
     {      
 
